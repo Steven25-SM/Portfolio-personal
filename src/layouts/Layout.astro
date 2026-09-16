@@ -1,0 +1,18 @@
+---
+const { title = "Portfolio | Steven Saldaña" } = Astro.props;
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Portfolio personal de Steven, desarrollador de software." />
+    <title>{title}</title>
+  </head>
+
+  <body class="bg-[#0d1117] text-gray-100">
+    <slot />
+  </body>
+</html>
